@@ -1,0 +1,32 @@
+17977
+Traceback (most recent call last):
+  File "knnWordsTest.py", line 188, in <module>
+    main()
+  File "knnWordsTest.py", line 150, in main
+    unclassedDict = loadWholeDict();
+  File "knnWordsTest.py", line 25, in loadWholeDict
+    wordAppear = pickleLoad(structfolder + 'wordAppeareanceNum30.pkl')
+  File "knnWordsTest.py", line 83, in pickleLoad
+    obj = pickle.load(file2)
+  File "/usr/lib/python2.7/pickle.py", line 1378, in load
+    return Unpickler(file).load()
+  File "/usr/lib/python2.7/pickle.py", line 858, in load
+    dispatch[key](self)
+  File "/usr/lib/python2.7/pickle.py", line 912, in load_int
+    data = self.readline()
+KeyboardInterrupt
+17977
+128730
+Traceback (most recent call last):
+  File "knnWordsTest.py", line 188, in <module>
+    main()
+  File "knnWordsTest.py", line 165, in main
+    classedMatrix = markMatrixColIfWordPresent(classedDict, classedMatrix, len(classedDict), wordCount)
+  File "knnWordsTest.py", line 42, in markMatrixColIfWordPresent
+    featMatrix[count-1, word] = 1;
+IndexError: index (3919) out of range (0<=index<3919) in dimension 1
+/usr/local/lib/python2.7/dist-packages/scikit_learn-0.14.1-py2.7-linux-x86_64.egg/sklearn/neighbors/classification.py:216: RuntimeWarning: invalid value encountered in divide
+  proba_k /= normalizer
+17977
+128730
+done
